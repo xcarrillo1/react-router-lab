@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//IMPORT BrowserRouter and rename it to Router
+import {BrowserRouter as Router} from "react-router-dom";
+
+//Wrap the App Component with the Router component to enable the router features
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
