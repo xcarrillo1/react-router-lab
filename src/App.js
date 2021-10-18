@@ -4,6 +4,7 @@ import "./styles.css";
 import {Route, Switch} from "react-router-dom";
 import Nav from "./components/Nav.js";
 import About from "./pages/About.js"
+import Home from "./pages/Home.js"
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/about">
           <About />
+        </Route>
+        <Route exact path="/">
+            <Home />
         </Route>
       </Switch>
     </div>
